@@ -1,0 +1,157 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'VarelaRound';
+    src: url(../Fuente/VarelaRound-Regular.ttf);
+}
+
+html{
+    font-family: 'VarelaRound';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(218, 136, 218, 0.959);
+}
+
+/* header */
+body{
+    font-family: 'VarelaRound';
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+header{
+    display: flex;
+    min-height: 70px;
+    background-color: rgb(255, 127, 80);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+
+}
+
+.logo img{
+    height: 100px;
+    margin-right: 10px;
+}
+
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+nav a:hover{
+    color: rgb(26, 145, 175);
+}
+
+@media (max-width: 700px){
+    header{
+        flex-direction: column;
+    }
+
+    nav{
+        padding: 10px 0px;
+    }
+}
+
+/* main */
+
+.titulo {
+    text-align: center; 
+    font-size: 2rem; 
+    margin: 20px 0; 
+    color: rgb(0, 0, 0); 
+}
+
+.banner {
+    background-image: url('../Image/inicio1.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding: 50px 20px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    position: relative;
+}
+
+.banner h1 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);
+}
+
+.parte1, .parte2 {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    min-height: 40vh; 
+    padding: 15px 0;
+}
+
+.imagen1, .imagen2 {
+    flex: 1; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    max-width: 100%; 
+}
+
+.imagen1 img, .imagen2 img {
+    max-height: 200px; 
+    width: auto; 
+    object-fit: cover; 
+}
+
+.parte1 .left {
+    flex-basis: 50%;
+}
+
+.parte1 .right {
+    flex-basis: 50%;
+}
+
+.caja2 {
+    flex-basis: 33%;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+/* footer */
+
+footer {
+    min-height: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1%;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: aliceblue;
+    padding: 20px 0;
+}
+
+footer .contenedor1, .contenedor2 {
+    flex-basis: 100%;
+}
+
+footer .contenedor1 img {
+    width: 40px;
+}
+
+footer .contenedor1 img:hover {
+    transform: scale(1.1);
+}
